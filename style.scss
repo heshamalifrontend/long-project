@@ -1,0 +1,176 @@
+// start global 
+$facebook-color:#1877f2;
+$youtube-color:#ff0000;
+$dark-color:#282828;
+$pinterest-color:#e60023;
+$dribble-color:#ea4c89;
+$twitter-color:#1da1f2;
+$reddit-color:#ff4500;
+$slack-color:#e9a820;
+$google-color-blue:#4285f4;
+$google-color-green:#34a853;
+$google-color-yellow:#fbbc05;
+$google-color-red:#ea4335;
+p{
+    opacity: 0.5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+// end global 
+
+// dark body
+body.dark{
+    background-color: $dark-color !important;
+    color:white;
+    transition: all 0.5s;
+    .navbar{
+        color:white !important;
+        background-color: #1b1a1a !important;
+        transition: all 0.5s;
+        .navbar-toggler{
+            color: white;
+        }
+        form{
+            .btn{
+                color:white !important;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .landing {
+        background-color: #1b1a1a !important;
+    color:white;
+    transition: all 0.5s;
+    }
+    .price{
+        background-color: #1b1a1a !important;
+        transition: all 0.5s;
+    }
+    a{
+        color: white !important;
+        transition: all 0.5s;
+    }
+}
+
+// navbar
+.navbar{
+    text-transform: capitalize;
+    form{
+        width: fit-content;
+    }
+    transition: all 0.5s;
+}
+
+// landing
+.landing{
+    .share{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .allcheck{
+            .ckeckp{
+                input{
+                    position: relative;
+                    appearance:none;
+                    width:30px;
+                    background-color: #ccc;
+                    height: 30px;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                    &::before{
+                        content: "√";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) rotate(17deg);
+                        color: transparent;
+                        font-size: 22px;
+                        transition: all 0.5s;
+                    }
+                    &:checked{
+                        background-color: #252525;
+                        transition: all 0.5s;
+                        &::before{
+                            color:white;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        img{
+            width: 100%;
+        }
+    }
+    transition: all 0.5s;
+}
+
+// brands
+.brands{
+    h4{
+        font: {
+            weight:bolder;
+            size: 30px;
+        }
+    }
+    .facebook{
+        color:$facebook-color;
+    }
+    .dribbble{
+        color:$dribble-color;
+    }
+    .google{
+        position: relative;
+        .g{
+            color:$google-color-blue;
+        }
+        .o{
+            color: $google-color-red;
+        }
+        .o2{
+            color:$google-color-yellow;
+        }
+        .g2{
+            color: $google-color-blue;
+        }
+        .l{
+            color:$google-color-green;
+        }
+        .e{
+            color: $google-color-red;
+        }
+    }
+    .Pinterest{
+        color:$pinterest-color;
+    }
+    .reddit{
+        color:$reddit-color;
+    }
+    .slack{
+        color:$slack-color;
+    }
+    .twitter{
+        color:$twitter-color;
+    }
+    .youtube{
+        color:$youtube-color;
+    }
+    transition: all 0.5s;
+}
+
+// darkmode
+.dark-mode{
+    cursor: pointer;
+    transition: all 0.5s;
+    #darkMode{
+        appearance: none;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+}

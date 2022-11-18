@@ -1,0 +1,155 @@
+@charset "UTF-8";
+p {
+  opacity: 0.5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+body.dark {
+  background-color: #282828 !important;
+  color: white;
+  transition: all 0.5s;
+}
+body.dark .navbar {
+  color: white !important;
+  background-color: #1b1a1a !important;
+  transition: all 0.5s;
+}
+body.dark .navbar .navbar-toggler {
+  color: white;
+}
+body.dark .navbar form .btn {
+  color: white !important;
+  transition: all 0.5s;
+}
+body.dark .landing {
+  background-color: #1b1a1a !important;
+  color: white;
+  transition: all 0.5s;
+}
+body.dark .price {
+  background-color: #1b1a1a !important;
+  transition: all 0.5s;
+}
+body.dark a {
+  color: white !important;
+  transition: all 0.5s;
+}
+
+.navbar {
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.navbar form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.landing {
+  transition: all 0.5s;
+}
+.landing .share {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing .share .allcheck .ckeckp input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 30px;
+  background-color: #ccc;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.landing .share .allcheck .ckeckp input::before {
+  content: "√";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(17deg);
+  color: transparent;
+  font-size: 22px;
+  transition: all 0.5s;
+}
+.landing .share .allcheck .ckeckp input:checked {
+  background-color: #252525;
+  transition: all 0.5s;
+}
+.landing .share .allcheck .ckeckp input:checked::before {
+  color: white;
+  transition: all 0.5s;
+}
+.landing .hero img {
+  width: 100%;
+}
+
+.brands {
+  transition: all 0.5s;
+}
+.brands h4 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.brands .facebook {
+  color: #1877f2;
+}
+.brands .dribbble {
+  color: #ea4c89;
+}
+.brands .google {
+  position: relative;
+}
+.brands .google .g {
+  color: #4285f4;
+}
+.brands .google .o {
+  color: #ea4335;
+}
+.brands .google .o2 {
+  color: #fbbc05;
+}
+.brands .google .g2 {
+  color: #4285f4;
+}
+.brands .google .l {
+  color: #34a853;
+}
+.brands .google .e {
+  color: #ea4335;
+}
+.brands .Pinterest {
+  color: #e60023;
+}
+.brands .reddit {
+  color: #ff4500;
+}
+.brands .slack {
+  color: #e9a820;
+}
+.brands .twitter {
+  color: #1da1f2;
+}
+.brands .youtube {
+  color: #ff0000;
+}
+
+.dark-mode {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.dark-mode #darkMode {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}/*# sourceMappingURL=style.css.map */
